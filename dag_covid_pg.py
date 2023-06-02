@@ -38,8 +38,8 @@ with DAG('dag_covid_pg',
                     df.loc[len(df)] = data
 
             return df
-            # return df with remove None in Countries column, remove ':,', set numbers as int
-
+            
+        # return df with remove None in Countries column, remove ':,', set numbers as int
         def clean_df(df):
             print(df)
             # remove empty value in Countries column
